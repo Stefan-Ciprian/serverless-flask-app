@@ -1,8 +1,9 @@
 # serverless-flask-app
 
 Requirements:
-    
+
     $ python3.9, python3.9-dev, python3.9-venv
+
 ## Setup
     $ sudo apt install python3.9-dev
     $ sudo apt install python3.9-venv

@@ -19,7 +19,7 @@ Requirements:
 
 ## Example calls ##
 
-##### Input
+##### GET Request
 ```
 http://127.0.0.1:5000/get_files
 ```
@@ -34,7 +34,7 @@ http://127.0.0.1:5000/get_files
 }
 ```
 
-##### Input
+##### GET Request
 ```
 http://127.0.0.1:5000/get_csv_data/trade_sample_1.csv
 ```

@@ -17,6 +17,46 @@ Requirements:
 ## Running locally
     $ python app.py
 
+## Example calls ##
+
+##### Input
+```
+http://127.0.0.1:5000/get_files
+```
+##### Output
+```
+{
+  "files": [
+    "trade_sample_1.csv", 
+    "trade_sample_2.csv", 
+    "trade_sample_3.csv"
+  ]
+}
+```
+
+##### Input
+```
+http://127.0.0.1:5000/get_csv_data/trade_sample_1.csv
+```
+##### Output
+```
+{
+  "currency": "USD", 
+  "series": [
+    [
+      1326844800000, 
+      180
+    ], 
+    [
+      1326931200000, 
+      234
+    ], 
+    ...
+  ], 
+  "total_earnings": -40331.44
+}
+```
+
 ### The application will read all files in flaskapp/static/csv directory ###
 
 To add more files, copy them to flaskapp/static/csv and they will be automatically displayed.

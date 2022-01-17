@@ -1,5 +1,5 @@
 {
-  "name": "inawisdom",
+  "name": "serverless-flask-app",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",

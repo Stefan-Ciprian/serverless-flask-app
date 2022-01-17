@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "essentia-analytics"
+name = "serverless-flask-app"
 version = "0.1.0"
 description = ""
 authors = ["Stefan Andronic <stefan.and89@gmail.com>"]

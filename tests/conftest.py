@@ -1,11 +1,21 @@
+"""Configure pytest"""
 import pytest
 from flaskapp import create_app
-from flaskapp.config import TestingConfig
+from flaskapp.config import Config
 
 
 @pytest.fixture
-def client():
-    app = create_app(TestingConfig)
+def test_client():
+    """
+    Generate a test client instance
 
-    with app.test_client() as client:
-        yield client
+    Yields
+    -------
+    test_client
+        Test client app instance
+    """
+    config = Config(True)
+    app = create_app(config)
+
+    with app.test_client() as test_client:
+        yield test_client

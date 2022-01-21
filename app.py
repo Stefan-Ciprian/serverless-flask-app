@@ -1,3 +1,4 @@
+"""Main file from where the app is being executed"""
 from flaskapp import create_app
 from flaskapp.config import Config
 

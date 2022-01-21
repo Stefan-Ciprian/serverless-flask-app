@@ -1,18 +1,27 @@
-# serverless-flask-app # 
+# serverless-flask-app
 
 Requirements:
 
-    $ python3.9, python3.9-dev, python3.9-venv
+    $ python3.10, pipenv
 
-## Setup
-    $ sudo apt install python3.9-dev
-    $ sudo apt install python3.9-venv
-    $ python3.9 -m venv env
-    $ source env/bin/activate
-    $ pip install -r requirements.txt
+## Setup ##
+    $ sudo apt install pipenv
+    $ pipenv shell --python 3.10
+    $ pipenv install --dev
 
-## Running tests
+## Check code linting ##
+    $ pylint flaskapp tests app.py
+
+## Running tests ##
     $ python -m pytest tests
+    $ pytest --cov=flaskapp tests
+
+## Documentation ##
+    $ cd docs
+    $ sphinx-apidoc -o ./source ..
+    $ make clean
+    $ make html
+    Open index.html from build/html/index.html
 
 ## Running locally
     $ python app.py

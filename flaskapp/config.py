@@ -12,7 +12,7 @@ class Config:
     testing : bool
         Set testing flag
     """
-    def __init__(self, testing=False):
+    def __init__(self, testing: bool = False):
         self.testing = testing
         self.cors_headers = 'Content-Type'
 

@@ -24,7 +24,7 @@ Requirements:
     Open index.html from build/html/index.html
 
 ## Running locally
-    $ python app.py
+    $ flask run
 
 ## Example calls ##
 

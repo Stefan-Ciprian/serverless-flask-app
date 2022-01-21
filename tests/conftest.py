@@ -5,7 +5,7 @@ from flaskapp.config import Config
 
 
 @pytest.fixture
-def test_client():
+def test_app_client():
     """
     Generate a test client instance
 
